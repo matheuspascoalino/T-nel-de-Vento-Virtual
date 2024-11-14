@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-dark: #023E73;
+    --secondary-blue: #8FB6D9;
+    --light-blue: #ACD1F2;
+    --deep-blue: #023859;
+    --accent-beige: #BFAF8F;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-dark);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 17%;
+    cursor: pointer;
+}
+
+div {
+    padding: 20px;
+    margin: 20px auto; /* Centraliza as divs */
+    background-color: #f4f4f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.sobre-nos, .nossa-equipe, .diferencial, .valores {
+    max-width: 800px;
+    width: 90%; /* Permite que a div use até 90% da largura da tela */
+}
+
+.sobre-nos {
+    background-color: var(--light-blue);
+}
+
+.diferencial {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.diferencial h2 {
+    color: white;
+}
+
+.valores h2 {
+    color: #007BFF;
+}
+
+strong {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    div {
+        margin: 10px; 
+        padding: 15px; 
+    }
+    
+    h1 {
+        font-size: 24px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+
+    .logo {
+        width: 50%; /* Aumenta o tamanho do logo em telas menores */
+        height: auto; /* Mantém a proporção do logo */
+    }
+}
